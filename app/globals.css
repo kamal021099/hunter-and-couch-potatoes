@@ -1,26 +1,26 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@config "../tailwind.config.ts";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* ── Colour Tokens ── */
+  --color-brand-primary: #FF4D1C;
+  --color-brand-dark:    #1A1A2E;
+  --color-brand-surface: #F5F0E8;
+  --color-brand-accent:  #FFB347;
+  --color-brand-muted:   #888888;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* ── Typography ── */
+  --font-heading: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* ── Border Radius ── */
+  --radius-card: 20px;
+  --radius-btn:  12px;
+  --radius-pill: 100px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-brand-dark);
+  color: var(--color-brand-surface);
+  font-family: var(--font-body);
 }
