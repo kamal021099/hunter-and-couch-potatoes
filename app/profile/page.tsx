@@ -67,7 +67,7 @@ export default function ProfilePage() {
           <InputField
             label="Full Name"
             type="text"
-            placeholder="Arjun Mehta"
+            placeholder="Tanvi Gupta"
             value={name}
             onChange={(e) => {
               setName(e.target.value);
@@ -118,7 +118,7 @@ export default function ProfilePage() {
           <InputField
             label="Email ID (optional)"
             type="email"
-            placeholder="arjun@example.com"
+            placeholder="tanvirocks@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

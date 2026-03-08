@@ -38,7 +38,7 @@ export default function LoginPage() {
 
         {/* Headline */}
         <h1 className="font-heading font-extrabold text-[26px] leading-tight text-white mb-2">
-          Welcome to<br />Hunters &amp; Couch Potatoes!
+          Welcome to<br /><span className="text-brand-primary">Hunters &amp; Couch Potatoes!</span>
         </h1>
 
         {/* Subtext */}
